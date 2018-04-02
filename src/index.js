@@ -9,13 +9,13 @@
 ********************************************************************************/ 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter, Switch, Route, Link} from 'react-router-dom';
 
 import './index.css';
 import App from './App';
 
 ReactDOM.render(
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   ,document.getElementById('root'));
